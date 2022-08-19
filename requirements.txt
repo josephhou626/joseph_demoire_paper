@@ -1,0 +1,16 @@
+# DMSFN requirements
+# Usage: pip install -r requirements.txt
+
+tensorboardX
+tensorboard >= 1.15.0
+matplotlib
+numpy
+opencv-python
+Pillow
+tqdm
+torchsummary
+pyyaml
+ninja
+
+
+
