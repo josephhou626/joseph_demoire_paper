@@ -79,9 +79,9 @@ python prepossessing.py --data_clear_path datasets/TIP18/testData/target --data_
 - For example: './datasets/FHDMi'
 
 
-### LCDMOire Dataset
+### LCDMoire Dataset
 - Author of this dataset : "[AIM 2019 Demoireing Challenge - Track 1: Fidelity](https://competitions.codalab.org/competitions/20165)"
-- Download from "[LCDMOire](https://competitions.codalab.org/competitions/20165)" dataset into './datasets' </br>
+- Download from "[LCDMoire](https://competitions.codalab.org/competitions/20165)" dataset into './datasets' </br>
 - For example: './datasets/LCDMoire'
 
 
@@ -154,7 +154,7 @@ python predict_TIP18.py --data_clear_path datasets/TIP18_crop/TestData/target --
 
 **For testing on FHDMi dataset** </br>
 - Download FHDMi dataset
-- For reproducing our results on FHDMi datasets, download "[FHDMi_DMSFN_plus.pth](https://drive.google.com/file/d/1e_BVrk98zxS8Z06B09QoUhAwBPjtMnLC/view?usp=sharing)"
+- For reproducing our results on FHDMi datasets, download "[FHDMi_DMSFN_plus.pth](https://drive.google.com/file/d/1KFyt6bcxOscheiHYYpab1LKFWh9g6BIa/view?usp=sharing)"
 - Put the FHDMi_DMSFN_plus.pth into 'checkpoints/FHDMi/DMSFN_plus'.
 - For example: 'checkpoints/FHDMi/DMSFN_plus/FHDMi_DMSFN_plus.pth'
 
@@ -166,7 +166,7 @@ python predict_FHDMi.py --data_clear_path datasets/FHDMi/test/target --data_moir
 
 **For testing on LCDMoire dataset** </br>
 - Download LCDMoire dataset
-- For reproducing our results on LCDMoire datasets, download "[LCDMoire_DMSFN_plus.pth](https://drive.google.com/file/d/1e_BVrk98zxS8Z06B09QoUhAwBPjtMnLC/view?usp=sharing)"
+- For reproducing our results on LCDMoire datasets, download "[LCDMoire_DMSFN_plus.pth](https://drive.google.com/file/d/1lr3IiNbkbSfAOsQRclJDQWrTAJ5U92ub/view?usp=sharing)"
 - Put the LCDMoire_DMSFN_plus.pth into 'checkpoints/LCDMoire/DMSFN_plus'.
 - For example: 'checkpoints/LCDMoire/DMSFN_plus/LCDMoire_DMSFN_plus.pth'
 
