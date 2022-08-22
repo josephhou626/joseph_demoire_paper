@@ -45,7 +45,7 @@
    
 ## Data preparation
 
-###TIP18 Dataset
+### TIP18 Dataset
 - Author of this dataset : "[Moiré Photo Restoration Using Multiresolution Convolutional Neural Networks](https://arxiv.org/abs/1805.02996)"
 - Download "[TIP18](https://drive.google.com/drive/folders/109cAIZ0ffKLt34P7hOMKUO14j3gww2UC)" dataset into './datasets' </br>
 - For example: './datasets/TIP18'
@@ -73,13 +73,13 @@ To generate test data:
 python prepossessing.py --data_clear_path datasets/TIP18/testData/target --data_moire_path datasets/TIP18/testData/source --save_dir_name TestData
 ```
 
-###FHDMi Dataset
+### FHDMi Dataset
 - Author of this dataset : "[FHDe2Net: Full High Definition Demoireing Network](https://github.com/PKU-IMRE/FHDe2Net)"
 - Download "[FHDMi](https://drive.google.com/drive/folders/1IJSeBXepXFpNAvL5OyZ2Y1yu4KPvDxN5)" dataset into './datasets' </br>
 - For example: './datasets/FHDMi'
 
 
-###LCDMOire Dataset
+### LCDMOire Dataset
 - Author of this dataset : "[AIM 2019 Demoireing Challenge - Track 1: Fidelity](https://competitions.codalab.org/competitions/20165)"
 - Download from "[LCDMOire](https://competitions.codalab.org/competitions/20165)" dataset into './datasets' </br>
 - For example: './datasets/LCDMoire'
@@ -185,7 +185,7 @@ python predict_LCDMoire.py --data_clear_path datasets/LCDmoire/valid/clear --dat
 
 ## Evaluation
 
-* For evaluation on TIP18 results in MATLAB, download "[TIP18_DMSFN_plus_results](https://drive.google.com/drive/folders/1zYDzGhOG617nwmn0cd0yvfo58H62azVx?usp=sharing)" into './results/TIP18/DMSFN_plus/output'
+* For evaluation on TIP18 results in MATLAB, download "[TIP18_DMSFN_plus_results](https://drive.google.com/file/d/1BnY7HYWwMhpDUq5-xO8Si34lWyy0CqAK/view?usp=sharing)" into './results/TIP18/DMSFN_plus/output'
 
 ```
 evaluation_TIP18.m
