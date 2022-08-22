@@ -31,6 +31,21 @@ def tensor2img(input_image):
     return image_numpy
 
 
+def aim_tensor2im(input_image, imtype=np.uint8):
+    if isinstance(input_image, torch.Tensor):
+        image_tensor = input_image.data
+    else:
+        return input_image
+
+    image_numpy = image_tensor.cpu().float().numpy()
+    if image_numpy.shape[0] == 1:
+        image_numpy = np.tile(image_numpy, (3, 1, 1))
+
+    image_numpy = (np.transpose(image_numpy, (1, 2, 0)))*255
+
+    return image_numpy
+
+
 # vgg19 用的
 def set_requires_grad(nets, requires_grad=False):
     """Set requies_grad=Fasle for all the networks to avoid unnecessary computations

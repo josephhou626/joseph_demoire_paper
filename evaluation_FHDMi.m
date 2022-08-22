@@ -1,10 +1,10 @@
 clear all;
 clc ;
 
-result_dir_name = 'result/TIP18/DMSFN_plus' ; 
-out_excel_name = 'TIP18_DMSFN_plus' ; 
+result_dir_name = 'result/FHDMi/DMSFN_plus' ; 
+out_excel_name = 'FHDMi_DMSFN_plus' ; 
 title_Isrc = sprintf('%s%s%s', './',result_dir_name , '/output/') ;
-title_Iout = sprintf('%s%s', './' , 'datasets/TIP18_crop/TestData/target/') ; 
+title_Iout = sprintf('%s%s', './' , 'datasets/FHDMi/test/target/') ; 
 
 addpath(title_Isrc); 
 addpath(title_Iout);

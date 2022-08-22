@@ -61,7 +61,7 @@ class commonDataset(data.Dataset):
 
 # get dataloader 
 def getLoader(img , Gt_img, batchSize=4,
-              mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), split='train', shuffle=True):
+              mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), split='train', shuffle=True , mode = None):
   if split == 'train':
     dataset = commonDataset(
                             img = img ,
@@ -74,14 +74,23 @@ def getLoader(img , Gt_img, batchSize=4,
 
     print('[Info]: The number of images in the train dataset :' , dataset.__len__() )
   else:
-    dataset = commonDataset(
-                            img = img ,
-                            Gt_img = Gt_img , 
-                            transform=transforms.Compose([
-                              transforms.ToTensor(),
-                              transforms.Normalize(mean, std),
-                             ]),
-                             loader=TIP_test_loader)
+    if mode == 'TIP':
+      dataset = commonDataset(
+                              img = img ,
+                              Gt_img = Gt_img , 
+                              transform=transforms.Compose([
+                                transforms.ToTensor(),
+                                transforms.Normalize(mean, std),
+                              ]),
+                              loader=TIP_test_loader)
+    else:
+        dataset = commonDataset(
+                              img = img ,
+                              Gt_img = Gt_img , 
+                              transform=transforms.Compose([
+                                transforms.ToTensor(),
+                              ]),
+                              loader=TIP_test_loader)
 
     print('[Info]: The number of images in the Test dataset :' , dataset.__len__() )
 
