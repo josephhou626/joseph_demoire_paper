@@ -1,6 +1,4 @@
 # Image Demoireing using Multi-scale Fusion Networks (DMSFN)
-[![paper](https://img.shields.io/badge/arXiv-Paper-brightgreen)]()
-[![official_paper](https://img.shields.io/badge/IEEE-Paper-blue)]()
 
 
 > **Abstract:** 
